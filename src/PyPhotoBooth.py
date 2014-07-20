@@ -33,7 +33,6 @@ class PyPhotoBooth:
         self.MainWindow.connect(
             self.timer, QtCore.SIGNAL('timeout()'), self.show_frame
         )
-
         self.MainWindow.connect(
             self.MainWindow.pushButton, QtCore.SIGNAL("clicked()"),
             self.take_photo
