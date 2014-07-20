@@ -42,7 +42,7 @@ class Photo:
                 )
                 main.MainWindow.lcdNumber.display(count+1)
                 pp = QtGui.QPixmap.fromImage(image)
-                pp = pp.scaled(100, 100, QtCore.Qt.KeepAspectRatio)
+                pp = pp.scaled(133, 100, QtCore.Qt.KeepAspectRatio)
                 if count == 0:
                     main.MainWindow.pick_01.setPixmap(pp)
                     main.MainWindow.pick_01.repaint()

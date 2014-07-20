@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>640</width>
-    <height>480</height>
+    <height>481</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -30,6 +30,9 @@
       <property name="cursor">
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="text">
        <string>Tomar Fotos</string>
       </property>
@@ -49,15 +52,22 @@
      <widget class="QLabel" name="pick_02">
       <property name="minimumSize">
        <size>
-        <width>100</width>
+        <width>133</width>
         <height>100</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>100</width>
+        <width>133</width>
         <height>100</height>
        </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+ border: 2px solid black;
+ padding: 5px;
+ border-radius: 5px;
+ margin: 2px;</string>
       </property>
       <property name="text">
        <string/>
@@ -68,15 +78,22 @@
      <widget class="QLabel" name="pick_01">
       <property name="minimumSize">
        <size>
-        <width>100</width>
+        <width>133</width>
         <height>100</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>100</width>
+        <width>133</width>
         <height>100</height>
        </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+ border: 2px solid black;
+ padding: 5px;
+ border-radius: 5px;
+ margin: 2px;</string>
       </property>
       <property name="text">
        <string/>
@@ -111,6 +128,12 @@
         <height>600</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true"> border: 2px solid black;
+ padding: 5px;
+ border-radius: 5px;
+ margin: 2px;</string>
+      </property>
       <property name="text">
        <string/>
       </property>
@@ -136,15 +159,22 @@
      <widget class="QLabel" name="pick_03">
       <property name="minimumSize">
        <size>
-        <width>100</width>
+        <width>133</width>
         <height>100</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>100</width>
+        <width>133</width>
         <height>100</height>
        </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+ border: 2px solid black;
+ padding: 5px;
+ border-radius: 5px;
+ margin: 2px;</string>
       </property>
       <property name="text">
        <string/>
