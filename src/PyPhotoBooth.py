@@ -29,9 +29,7 @@ class PyPhotoBooth:
         self.global_count = 0
         self.MainWindow = uic.loadUi('main.ui')
         self.webcam = cv.CreateCameraCapture(-1)
-
         self.timer = QtCore.QTimer(self.MainWindow)
-
         self.MainWindow.connect(
             self.timer, QtCore.SIGNAL('timeout()'), self.show_frame
         )
