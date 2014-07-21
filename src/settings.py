@@ -9,4 +9,4 @@ AUTO_PRINT = False
 
 PATCH_BACKGROUND_IMG = 'media/background-default.jpg'
 
-PATCH_LOGO_IMG = 'media/Camera.png'
+PATCH_LOGO_IMG = 'media/logo.png'

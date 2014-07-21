@@ -53,7 +53,7 @@ class PyPhotoBooth:
             )
             self.MainWindow.setPalette(palette)
         if PATCH_LOGO_IMG is not None:
-            self.MainWindow.lblWebcam.setPixmap(
+            self.MainWindow.lbllogo.setPixmap(
                 QtGui.QPixmap(PATCH_LOGO_IMG)
             )
         self.timer.start(1)
