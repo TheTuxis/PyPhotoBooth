@@ -1,11 +1,11 @@
 PyPhotoBooth
 ======
 
-## Installing
+## About
     Is a simple software to implement and photo booth.
 
 ## Installing
 
-### Requirement
+#### Requirement
     * python-opencv
     * python-qt4
