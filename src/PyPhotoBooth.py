@@ -19,7 +19,7 @@ import cv
 from PyQt4 import uic, QtGui, QtCore
 from cv2 import *
 from photo import Photo
-from settings import AUTO_PRINT, PATCH_BACKGROUND_IMG
+from settings import AUTO_PRINT, PATCH_BACKGROUND_IMG, PATCH_LOGO_IMG
 
 
 class PyPhotoBooth:
@@ -52,6 +52,10 @@ class PyPhotoBooth:
                 )
             )
             self.MainWindow.setPalette(palette)
+        if PATCH_LOGO_IMG is not None:
+            self.MainWindow.lblWebcam.setPixmap(
+                QtGui.QPixmap(PATCH_LOGO_IMG)
+            )
         self.timer.start(1)
 
     def take_photo(self):
