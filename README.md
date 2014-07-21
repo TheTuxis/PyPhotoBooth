@@ -1,4 +1,4 @@
-PyPhotoBooth
+![PyPhotoBooth](https://raw.githubusercontent.com/tuxis/PyPhotoBooth/master/src/media/Camera.png)PyPhotoBooth
 ======
 
 ## About
