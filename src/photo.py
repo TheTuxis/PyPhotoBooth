@@ -3,7 +3,7 @@
 import Image
 import PIL
 import os
-from settings import TEMP_PHOTO_DIR, PREFIX_PHOTO_NAME, AUTO_PRINT
+from settings import TEMP_PHOTO_DIR, PREFIX_PHOTO_NAME, AUTO_PRINT, PAPER_SIZE
 
 from PyQt4 import QtGui, QtCore
 import time
@@ -108,9 +108,11 @@ class Photo:
                     global_count
                 ) + "_final.jpg"
             )
-            os.system("lp " + TEMP_PHOTO_DIR + "/" + PREFIX_PHOTO_NAME + str(
-                global_count
-            ) + "_final.jpg")
+            os.system(
+                "lp -o " + PAPER_SIZE + " " + TEMP_PHOTO_DIR + "/" + PREFIX_PHOTO_NAME + str(
+                    global_count
+                ) + "_final.jpg"
+            )
             global_count += 1
             return True, global_count
         except:
