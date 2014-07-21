@@ -19,7 +19,7 @@ import cv
 from PyQt4 import uic, QtGui, QtCore
 from cv2 import *
 from photo import Photo
-from settings import AUTO_PRINT
+from settings import AUTO_PRINT, PATCH_BACKGROUND_IMG
 
 
 class PyPhotoBooth:
@@ -44,6 +44,14 @@ class PyPhotoBooth:
                 self.MainWindow.pushButton_2, QtCore.SIGNAL("clicked()"),
                 self.print_photo_button
             )
+        if PATCH_BACKGROUND_IMG is not None:
+            palette = QtGui.QPalette()
+            palette.setBrush(
+                QtGui.QPalette.Background, QtGui.QBrush(
+                    QtGui.QPixmap(PATCH_BACKGROUND_IMG)
+                )
+            )
+            self.MainWindow.setPalette(palette)
         self.timer.start(1)
 
     def take_photo(self):
